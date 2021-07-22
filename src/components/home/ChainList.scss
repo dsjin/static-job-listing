@@ -1,0 +1,45 @@
+@import '../../assets/common/color';
+.chain-list {
+    li {
+        &:not(:first-child):not(:last-child) {
+            &::before {
+                content: '•';
+                position: absolute;
+                top: 0;
+                left: -10px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &::after {
+                content: '•';
+                position: absolute;
+                top: 0;
+                right: -8px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            position: relative;
+            @apply px-2;
+            @media (min-width: 1024px) {
+                @apply px-5;
+                &::before {
+                    left: -5px;
+                }
+                &::after {
+                    right: -5px;
+                }
+            }
+        }
+        color: $dark_grayish_cyan;
+        &:first-child {
+            @apply pr-5;
+        }
+        &:last-child {
+            @apply pl-5;
+        }
+    }
+}

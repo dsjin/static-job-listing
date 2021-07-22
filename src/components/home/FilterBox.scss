@@ -1,0 +1,14 @@
+@import '../../assets/common/color';
+.filter-box {
+    & > span {
+        &:not(:last-child) {
+            @apply mr-3;
+        }
+    }
+    .clear-button {
+        color: $dark_grayish_cyan;
+        &:hover {
+            color: $desaturated_dark_cyan;
+        }
+    }
+}
