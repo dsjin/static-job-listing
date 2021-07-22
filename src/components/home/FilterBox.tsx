@@ -32,7 +32,7 @@ const FilterBox = (props: IFilterBox) => {
         }
       </div>
       <div
-        className="flex-none flex items-center justify-center clear-button cursor-pointer"
+        className="flex-none flex items-center justify-center clear-button cursor-pointer text-xs mb-2 lg:mb-0"
         onClick={ () => props.discardAllCallback!!()  }
       >
         Clear
