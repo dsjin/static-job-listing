@@ -2,25 +2,20 @@
 .chain-list {
     li {
         &:not(:first-child):not(:last-child) {
-            &::before {
+            &::before, &::after {
                 content: '•';
                 position: absolute;
                 top: 0;
-                left: -10px;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+            &::before {
+                left: -10px;
+            }
             &::after {
-                content: '•';
-                position: absolute;
-                top: 0;
                 right: -8px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
             position: relative;
             @apply px-2;

@@ -1,6 +1,9 @@
 @import '../../assets/common/color';
 #Header {
-    background-image: url('../../assets/images/bg-header-desktop.svg');
+    background-image: url('../../assets/images/bg-header-mobile.svg');
+    @media (min-width: 1024px) {
+        background-image: url('../../assets/images/bg-header-desktop.svg');
+    }
     height: 156px;
     background-color: $desaturated_dark_cyan;
 }
