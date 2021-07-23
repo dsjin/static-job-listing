@@ -51,6 +51,11 @@ Users should be able to:
 - First React Website 🎉
 - Tailwindcss
     * Reuse Tailwindcss class on some css classes
+```scss
+.some-custome-css-classes {
+    @apply .tailwind-css-class
+}
+```
 - under construction...
 
 ### Continued development
